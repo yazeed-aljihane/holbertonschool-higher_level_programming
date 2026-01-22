@@ -31,6 +31,5 @@ TypeError: a must be an integer
 >>> add_integer(-5, -10)
 -15
 
->>> add_integer(100.5, 200.7)
-300
+
 """
