@@ -1,0 +1,34 @@
+"""
+This is a doctest for add_integer function
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(100, 100)
+200
+
+>>> add_integer(100, 900.0)
+1000
+
+>>> add_integer(100, "hello")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+>>> add_integer("hello", 900)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> add_integer(100)
+198
+
+>>> add_integer(-5, 10)
+5
+
+>>> add_integer(5, -10)
+-5
+
+>>> add_integer(-5, -10)
+-15
+
+"""
