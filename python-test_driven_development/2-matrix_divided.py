@@ -23,7 +23,6 @@ def matrix_divided(matrix, div):
     """
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
-    
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
