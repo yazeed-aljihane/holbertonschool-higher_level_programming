@@ -1,16 +1,17 @@
 #!/usr/bin/python3
 """
-This module defines an empty Square class.
+This module provides a base definition for square-related logic.
 
-The module is designed to demonstrate the basic structure of a class
-in Python as part of a geometry-related project.
+It includes the Square class which serves as a foundational element
+for geometric operations within this project.
 """
 
 
 class Square:
-    """A class that defines a square.
+    """Defines a square object.
 
-    This class currently does not have any attributes or methods. It serves
-    as a placeholder for future square-related functionality.
+    This class is currently implemented as an empty placeholder to define
+    the structure of a square, with plans to include dimensions and area
+    calculations in future iterations.
     """
     pass
