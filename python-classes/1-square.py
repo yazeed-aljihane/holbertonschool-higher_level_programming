@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """This module defines a Square class for geometric operations.
 
-The module provides a specialized class to handle properties and 
+The module provides a specialized class to handle properties and
 behaviors of squares, ensuring data integrity through private attributes.
 """
 
@@ -9,8 +9,8 @@ behaviors of squares, ensuring data integrity through private attributes.
 class Square:
     """A class used to represent a Square.
 
-    This class provides a foundation for creating square objects with a 
-    specific size, ensuring that the attribute is kept private to 
+    This class provides a foundation for creating square objects with a
+    specific size, ensuring that the attribute is kept private to
     prevent unauthorized modification.
 
     Attributes:
