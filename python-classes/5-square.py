@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""This module defines a Square class with size properties and validation.
+"""This module defines a Square class with size properties and visualization.
 
-The module provides a square representation that encapsulates size 
-and ensures all modifications adhere to type and value constraints.
+The module provides a square representation that encapsulates size
+and ensures all modifications adhere to type and value constraints,
+along with methods to calculate area and print the square.
 """
 
 
@@ -32,13 +33,6 @@ class Square:
         """
         return self.__size
 
-    def my_print(self):
-        if self.__size == 0:
-            print("")
-        for i in range(self.__size):
-            for j in range(self.__size):
-                print("#", end="")
-            print("")
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
@@ -54,3 +48,15 @@ class Square:
             int: The area of the square, calculated as size squared.
         """
         return self.__size * self.__size
+
+    def my_print(self):
+        """Prints the square with the '#' character to stdout.
+
+        If size is equal to 0, it prints an empty line.
+        """
+        if self.__size == 0:
+            print("")
+            return
+
+        for i in range(self.__size):
+            print("#" * self.__size)
