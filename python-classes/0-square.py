@@ -15,4 +15,3 @@ class Square:
     calculations in future iterations.
     """
     pass
-
