@@ -8,10 +8,10 @@
 def is_same_class(obj, a_class):
     """is_same_class: help to know if the object is instance from specifc class
 
-    Aurgemant:
-    obj: instance from class
-    a_class: class
+    Args:
+    obj(any): instance from class
+    a_class(type): class
 
-    Return: true if instance from class or false otherwise
+    Returns: true if instance from class or false otherwise
     """
-    return isinstance(obj, a_class)
+    return type(obj) is a_class
