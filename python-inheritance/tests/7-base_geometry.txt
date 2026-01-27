@@ -63,13 +63,21 @@ Traceback (most recent call last):
 TypeError: age must be an integer
 
 Check with no arguments:
->>> bg.integer_validator()
-Traceback (most recent call last):
-...
-TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+>>> try:
+...     bg.integer_validator()
+... except TypeError as e:
+...     print(str(e).replace("BaseGeometry.", ""))
+integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 Check with only one argument ("age"):
->>> bg.integer_validator("age")
+>>> try:
+...     bg.integer_validator("age")
+... except TypeError as e:
+...     print(str(e).replace("BaseGeometry.", ""))
+integer_validator() missing 1 required positional argument: 'value'
+
+Check with float argument:
+>>> bg.integer_validator("age", 13.5)
 Traceback (most recent call last):
 ...
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+TypeError: age must be an integer
