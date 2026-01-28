@@ -57,7 +57,7 @@ class Circle(Shape):
         Returns:
             float: The calculated perimeter.
         """
-        return self.radius * math.pi * 2
+        return abs(self.radius * math.pi * 2)
 
 
 class Rectangle(Shape):
@@ -92,7 +92,7 @@ class Rectangle(Shape):
         Returns:
             float: The calculated perimeter.
         """
-        return 2 * (self.width + self.height)
+        return abs(2 * (self.width + self.height))
 
 
 def shape_info(obj):
