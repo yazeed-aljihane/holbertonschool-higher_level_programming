@@ -1,15 +1,16 @@
-#!/usr/bin/python3
-"""Defines a JSON-to-string conversion function."""
-import json
-
-
-def to_json_string(my_obj):
-    """Return the JSON representation of an object (string).
+def read_file(filename=""):
+    """Reads a text file (UTF8) and prints it to stdout.
 
     Args:
-        my_obj: The object to be serialized into JSON format.
+        filename (str): The name of the file to read. Defaults to an empty string.
 
     Returns:
-        str: The JSON string representation of my_obj.
+        None: This function does not return any value.
+
+    Note:
+        The function uses a 'with' statement to ensure the file is properly 
+        closed after reading, and it specifies 'utf-8' encoding to handle 
+        various character sets correctly.
     """
-    return json.dumps(my_obj)
+    with open(filename, mode='r', encoding='utf-8') as my_file:
+        print("{}".format(my_file.read()), end="")
