@@ -15,8 +15,8 @@ def fetch_and_save_posts():
     r = requests.get('https://jsonplaceholder.typicode.com/posts')
     if r.ok:
         posts = r.json()
-        keys = posts[0].keys()
+        keys = ['id', 'title', 'body']
         with open('posts.csv', mode='w', encoding='utf-8') as file:
-            file_writes = csv.DictWriter(file, fieldnames= keys)
+            file_writes = csv.DictWriter(file, fieldnames= keys, extrasaction='ignore')
             file_writes.writeheader()
             file_writes.writerows(posts)
