@@ -33,7 +33,7 @@ class httpreq(http.server.BaseHTTPRequestHandler):
             self.send_response(404)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
-            massge = "404 Not Found"
+            massge = "Endpoint not found"
             self.wfile.write(massge.encode())
 
 if __name__ == "__main__":
