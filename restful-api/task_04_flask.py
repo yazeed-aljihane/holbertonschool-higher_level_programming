@@ -3,9 +3,9 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-storge = {'khalid': {"username": "Jane", "age": 28, "city": "Los Angeles"},
-            'yazeed': {"username": "yazeed", "age": 25, "city": "Los"}
-            }
+storge = {}
+
+
 @app.route('/')
 def home():
     return "Welcome to the Flask API!"
@@ -18,7 +18,7 @@ def data():
 
 @app.route('/status')
 def status():
-    return "ok"
+    return "OK"
 
 @app.route("/users/<username>")
 def users(username):
