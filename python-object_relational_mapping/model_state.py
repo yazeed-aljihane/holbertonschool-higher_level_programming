@@ -6,7 +6,7 @@ It maps the State class to the MySQL table 'states'.
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
-# إنشاء القاعدة الأساسية للنماذج
+
 Base = declarative_base()
 
 
