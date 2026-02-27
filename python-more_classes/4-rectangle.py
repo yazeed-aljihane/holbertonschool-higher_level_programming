@@ -103,3 +103,6 @@ class Rectangle:
             str: A string in the format 'Rectangle(width, height)'.
         """
         return f"Rectangle({self.__width}, {self.__height})"
+
+    def __del__(self):
+        print("Bye rectangle...")
