@@ -28,7 +28,8 @@ def list_all():
 
         query = "SELECT cities.name " \
                 "FROM cities INNER JOIN states ON " \
-                "cities.state_id = states.id WHERE states.name = %s ORDER BY cities.id ASC"
+                "cities.state_id = states.id WHERE states.name "\
+                "= %s ORDER BY cities.id ASC"
         cur.execute(query, (sys.argv[4],))
 
         rows = cur.fetchall()
