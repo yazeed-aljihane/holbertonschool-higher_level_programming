@@ -25,8 +25,8 @@ def list_all():
         )
         cur = db.cursor()
 
-        query = "SELECT * FROM states WHERE name = {} ORDER BY id ASC".format("%s")
-        cur.execute(query, (sys.argv[4],))
+        cur.execute("SELECT * FROM states WHERE name = \
+        '{}' ORDER BY id ASC".format(sys.argv[4]))
 
         rows = cur.fetchall()
         for row in rows:
