@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+Contains the class definition of a State with relationship.
+"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
 from relationship_city import Base, City
