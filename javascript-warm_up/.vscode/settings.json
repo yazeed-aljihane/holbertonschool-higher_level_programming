@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": false,
+  "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
+  "javascript.format.semicolons": "remove"
+}
