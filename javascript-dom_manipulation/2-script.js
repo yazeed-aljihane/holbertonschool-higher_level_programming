@@ -1,5 +1,6 @@
-let header = document
+let header = document.querySelector("header");
+let red_header = document
   .getElementById("red_header")
   .addEventListener("click", function () {
-    this.classList.add("red");
+    red_header.classList.add("red");
   });
