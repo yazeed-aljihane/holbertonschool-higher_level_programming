@@ -1,5 +1,6 @@
+const red_header = document.querySelector("header");
 let header = document
   .getElementById("red_header")
   .addEventListener("click", function () {
-    this.style.color = "#FF0000";
+    red_header.style.color = "#FF0000";
   });
